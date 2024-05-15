@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+section h2,
+section h3,
+form button {
+    font-family: 'open sans', cursive;
+    font-weight: normal;
+}
+
+header {
+    padding: 0;
+    background-color: #ff8e23;
+    color: #ff6600;
+    display: flex;
+    justify-content: space-between; /* Para espaçamento igual entre os elementos */
+    align-items: center; /* Para centralizar verticalmente */
+    margin-bottom: 20px;
+}
+
+header .logomarca img {
+    height: 180px;
+}
+
+.menu {
+    align-items: center;
+    display: flexbox;
+}
+
+header {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+header nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+body, input, textarea {
+    font-family: open, sans-serif;
+
+h3 {
+    font-weight: normal;
+}
+
+p {
+    font-weight: normal;
+    font-size: 30;
+}
+
+/*estilo6 estilização dos logos. Configuramos a altura da imagem e sua exibição para que se apresentem uma ao lado da outra.*/
+.brands-list img {
+    height: 50px;
+}
+
+.brands-list li {
+    display: inline;
+    margin-right: 8px;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.equipe img {
+    display: inline;
+    align-items: center;
+    margin-right: 100px;
+    margin-top: 80px;
+}
+
+/*estilo5  aproveitamos a regra CSS escrita para o container dentro do header e adicionamos a mesma regra para o container dentro da section, pois são estruturas iguais.*/
+header .container,
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.brands-list li {
+    display: inline;
+    margin-right: 8px;
+}
+
+/*estilo7 estilização dos elementos da section, alinhamento vertical no começo do container, aplicação de espaçamento interno e coloração dos textos.*/
+section .container {
+    align-items: flex-start;
+}
+
+.store-front {
+    margin-right: 32px;
+    height: 400px;
+}
+
+section {
+    padding: 24px 0;
+}
+
+section h2{
+    margin-bottom: 16px;
+}
+
+section {
+    color: #182c61;
+}
+
+section p {
+    margin-bottom: 8px;
+}
+
+/*estilo8 estilização dos elementos da section, alinhamento vertical no começo do container, aplicação de espaçamento interno e coloração dos textos.*/
+.store-front {
+    margin-right: 32px;
+}
+
+/*Configuramos a altura dos icones, deixamos os elementos lado a lado e removemos o underline dos links*/
+.social-links img {
+    height: 24px;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links li a {
+    text-decoration: none;
+}
+
+/*Sobrescrevemos o estilo de container para que tenha o display: block e não flex, apenas para container dentro de #contact. Criamos a classe contact-methods, essa sim terá seus elementos lado a lado, com display: flex.*/
+#contact .container {
+    display: block;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Os inputs, textarea e button foram estilizados para se apresentarem como blocos; aplicação de margem inferior e espaçamento interno e configuração da largura dos elementos. */
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+/*Removemos a possibilidade de redimensionar o textarea com resize: none.*/
+form textarea {
+    resize: none;
+    height: 180px;
+}
+
+section h3 {
+    margin-bottom: 16px;
+}
+
+
+
+/*Estilizamos o botão aplicando cor de fundo e alterando esta cor quando passar o mouse sobre ele, com o pseudo-seletor: houver.*/
+form button { 
+    background-color: #182C61;
+    color: #ecf0f1;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #314e9e;
+}
+
+/*Os inputs, textarea e button foram estilizados para se apresentarem como blocos; aplicação de margem inferior e espaçamento interno e configuração da largura dos elementos.*/
+input:focus, textarea:focus {
+    outline-color: #182C61;
+}
+
+footer {
+    background-color: #ff8e23;
+    color: #ecf0f1;
+    padding: 16px 0;
+}
